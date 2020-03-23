@@ -1,6 +1,9 @@
 ### sausage
-nginx conf files for tucano server
+Server configuration files for Tucano Web Platforms
 
-To use:
-- create symlinks of your .conf specific-project files into conf.d/
-- run nginx with `sausage.conf` as main .conf file
+To use: add `supervisor/sausage.conf` file to supervisor/conf.d programs
+
+## It includes:
+* ikaro
+* recolecta
+* cerebro (proxy, needs SSH tunnel)

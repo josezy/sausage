@@ -1,3 +1,10 @@
 .DS_Store
-conf.d/*
-tmp/*
+
+data/certs/*
+!data/certs/.gitkeep
+
+data/tmp/*
+!data/tmp/.gitkeep
+
+data/logs/*
+!data/logs/.gitkeep

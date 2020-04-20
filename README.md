@@ -32,3 +32,7 @@ server {
 `certbot certonly --webroot -w /var/lib/letsencrypt -d tucanoar.com -d www.tucanoar.com`
 * _Remember to add other subdomains_
 
+### SSH tunnel
+```
+ssh -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -L 5000:localhost:8000 -p <remote-port> <remote-user>@<remote-host>
+```

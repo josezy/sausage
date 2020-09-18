@@ -34,5 +34,5 @@ server {
 
 ### SSH tunnel
 ```
-ssh -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -L 5000:localhost:8000 -p <remote-port> <remote-user>@<remote-host>
+ssh -N -o "ServerAliveInterval 60" -L <source-port>:localhost:<dest-port> -p <remote-port> <remote-user>@<remote-host>
 ```

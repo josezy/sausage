@@ -15,7 +15,7 @@ To use: add `supervisor/sausage.conf` file to supervisor/conf.d programs
 server {
   listen 80 default_server;
   listen [::]:80 default_server ipv6only=on;
-  server_name tucanoar.com *.tucanoar.com;
+  server_name tucanorobotics.co *.tucanorobotics.co;
   root /var/lib/letsencrypt;
 
   location ^~ /.well-known/acme-challenge/ {
@@ -29,7 +29,7 @@ server {
 }
 ```
 
-`certbot certonly --webroot -w /var/lib/letsencrypt -d tucanoar.com -d www.tucanoar.com`
+`certbot certonly --webroot -w /var/lib/letsencrypt -d tucanorobotics.co -d www.tucanorobotics.co -d icaro.tucanorobotics.co`
 * _Remember to add other subdomains_
 
 ### SSH tunnel

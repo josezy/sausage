@@ -10,7 +10,7 @@ To use: add `supervisor/sausage.conf` file to supervisor/conf.d programs
 * cerebro (proxy, needs SSH tunnel)
 
 ### SSL certs
-##### nginx without docker
+##### not used anymore
 ```
 server {
   listen 80 default_server;
